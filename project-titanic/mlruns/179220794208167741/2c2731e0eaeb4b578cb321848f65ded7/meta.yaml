@@ -1,0 +1,15 @@
+artifact_uri: file:///g:/My%20Drive/MSc%20Computer%20Science/MLOps/project/project-titanic/mlruns/179220794208167741/2c2731e0eaeb4b578cb321848f65ded7/artifacts
+end_time: 1736028769713
+entry_point_name: ''
+experiment_id: '179220794208167741'
+lifecycle_stage: active
+run_id: 2c2731e0eaeb4b578cb321848f65ded7
+run_name: mysterious-perch-695
+run_uuid: 2c2731e0eaeb4b578cb321848f65ded7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736028765165
+status: 3
+tags: []
+user_id: luisa

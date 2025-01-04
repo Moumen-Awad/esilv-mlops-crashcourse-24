@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1736028776690
+current_stage: None
+description: null
+last_updated_timestamp: 1736028776690
+name: titanic-random-forest-v2
+run_id: dceec8c34f174e9d97a6356f5c2899ec
+run_link: null
+source: file:///g:/My%20Drive/MSc%20Computer%20Science/MLOps/project/project-titanic/mlruns/179220794208167741/dceec8c34f174e9d97a6356f5c2899ec/artifacts/models
+status: READY
+status_message: null
+storage_location: file:///g:/My%20Drive/MSc%20Computer%20Science/MLOps/project/project-titanic/mlruns/179220794208167741/dceec8c34f174e9d97a6356f5c2899ec/artifacts/models
+user_id: null
+version: 1
