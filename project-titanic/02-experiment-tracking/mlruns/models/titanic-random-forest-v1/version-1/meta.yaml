@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1736097242004
+current_stage: None
+description: null
+last_updated_timestamp: 1736097242004
+name: titanic-random-forest-v1
+run_id: 7111c63eb3f54482bfd2d08d56facf52
+run_link: null
+source: file:///c:/Users/moume/Downloads/ESVIL%20Large%20files/esilv-mlops-crashcourse-24/project-titanic/02-experiment-tracking/mlruns/943887915895434127/7111c63eb3f54482bfd2d08d56facf52/artifacts/models
+status: READY
+status_message: null
+storage_location: file:///c:/Users/moume/Downloads/ESVIL%20Large%20files/esilv-mlops-crashcourse-24/project-titanic/02-experiment-tracking/mlruns/943887915895434127/7111c63eb3f54482bfd2d08d56facf52/artifacts/models
+user_id: null
+version: 1

@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/moume/Downloads/ESVIL%20Large%20files/esilv-mlops-crashcourse-24/project-titanic/02-experiment-tracking/mlruns/943887915895434127/7111c63eb3f54482bfd2d08d56facf52/artifacts
+end_time: 1736097242032
+entry_point_name: ''
+experiment_id: '943887915895434127'
+lifecycle_stage: active
+run_id: 7111c63eb3f54482bfd2d08d56facf52
+run_name: dazzling-quail-393
+run_uuid: 7111c63eb3f54482bfd2d08d56facf52
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736097237833
+status: 3
+tags: []
+user_id: moume
