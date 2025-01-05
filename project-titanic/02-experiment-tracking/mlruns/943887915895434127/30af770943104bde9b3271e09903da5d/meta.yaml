@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/moume/Downloads/ESVIL%20Large%20files/esilv-mlops-crashcourse-24/project-titanic/02-experiment-tracking/mlruns/943887915895434127/30af770943104bde9b3271e09903da5d/artifacts
+end_time: 1736097247123
+entry_point_name: ''
+experiment_id: '943887915895434127'
+lifecycle_stage: active
+run_id: 30af770943104bde9b3271e09903da5d
+run_name: industrious-frog-599
+run_uuid: 30af770943104bde9b3271e09903da5d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736097242059
+status: 3
+tags: []
+user_id: moume
