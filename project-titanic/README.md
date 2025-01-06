@@ -1,86 +1,71 @@
-# Overview
+# Project Overview
+
+### Titanic Data Exploration and Model Deployment Pipeline
+
+This project focuses on exploring the Titanic dataset, performing data analysis and preprocessing, and using MLflow to track experiments with machine learning models. After selecting the best-performing model, we deploy it using FastAPI and Docker. The project also includes building pipelines and orchestrating tasks using Prefect to automate workflows.
+
+## Folders Structure
+
+- **data**: Contains the dataset used for training and testing the models.
+- **models**: Contains pre-trained `.pkl` files, including the model, encoder, and `DictVectorizer`.
+
+## **Sections Overview**
+
+- **01-data_exploration**: Initial dataset exploration and implementation of basic machine learning models.
+- **02-experiment-tracking**: Experiment tracking using MLflow, selecting the best-performing model, and saving its artifacts (model, encoder, `DictVectorizer`).
+- **03-model-deployment**: Deploying the best model as a web service using FastAPI, containerizing the application with Docker, and testing the API.
+- **04-pipeline-and-orchestration**: Building a pipeline with Prefect to automate tasks, visualize workflows, and schedule deployments.
 
 ## Objective
 
-Titanic Data Exploration and Model Experimentation
+The primary objective of this project is to apply MLOps best practices by exploring the Titanic dataset, tracking model experiments, deploying a model using FastAPI, and orchestrating workflows using Prefect.
 
-## [MANDATORY] Pre-requisites & setup
+## **[MANDATORY] Pre-requisites & Setup**
 
-> [!Note]
-> TL; DR
+> **Quick Setup Guide**:
 > - Docker Desktop
 > - Git
-> - Conda / Minconda / another Python environment manager
+> - Conda / Miniconda / Any Python Environment Manager
 > - Python 3.10
-> - Install [./requirements.txt](requirements.txt)
+> - Install dependencies via [requirements.txt](requirements.txt)
 
-You can find all pre-requisites and setup instructions [here](PREREQUISITES.md).
+You can find detailed setup instructions in [PREREQUISITES.md](PREREQUISITES.md).
 
 ## Timeline
 
-Course start: October 9th 
-Course end: January 6th
+**Submission Deadline**: January 6th
 
-## Syllabus
+## **Modules and Sections**
 
-## [Module 1: Introduction to MLOps](lessons/00-intro)
+### **[Module 1: Data Exploration](01-data-exploration)**
+   - Introduced the Titanic dataset and its features.
+   - Performed data cleaning and preprocessing to handle missing values.
+    - Created new features like family size and title extraction.
+   - Encoded categorical features using `DictVectorizer` and `LabelEncoder`.
+   - Trained a RandomForestClassifier on the processed data.
+   - Evaluated the model using accuracy score.
 
-* What is MLOps
-* Course overview
-* Coding best practices
-* Prerequisites and setup
-* Running example: NY Taxi trips dataset
+### **[Module 2: Experiment Tracking](02-experiment-tracking)**
+   - Set up MLflow for tracking experiments.
+   - Ran multiple experiments using MLflow to compare models.
+   - Tracked parameters, metrics, and artifacts for each run.
+   - Identified the best-performing model.
+   - Saved the selected model, encoder, and `DictVectorizer` as artifacts.
 
+### **[Module 3: Model Deployment](03-model-deployment)**
+   - Created a FastAPI application to expose the model as an API endpoint.
+   - Implemented the `/predict` endpoint to handle prediction requests.
+   - Wrote a `Dockerfile` to containerize the FastAPI app.
+   - Built and tested the Docker image locally.
+   - Ran the Docker container and tested the `/predict` endpoint with sample data.
+   - Verified the API's functionality with different test cases.
 
-## [Module 2: Experiment Tracking](lessons/01-model-and-experiment-management)
+### **[Module 4: Pipelines and Orchestration](04-pipeline-and-orchestration)**
+   - Set up Prefect to manage workflows and pipelines.
+   - Created a `train_model_workflow` using Prefect to automate data processing, training, and evaluation.
+   - Scheduled the flow to run at specific intervals.
+   - Monitored the workflow's execution and reviewed logs using Prefect's UI.
 
-* Experiment tracking intro
-* What is MLflow
-* Experiment tracking with MLflow
-* Saving and loading models with MLflow
-* Model registry
-* Practice
-
-
-## [Module 3: Model Deployment](lessons/02-model-deployment)
-
-* Web service: model deployment with FastAPI
-* Docker: containerizing a web service
-* Practice
-
-
-## [Module 4: Pipelines and Orchestration](lessons/03-pipeline-and-orchestration)
-
-* Tasks, Flows, Deployments
-* From notebooks to Workflows
-* Workflows orchestration with prefect
-* Practice
-
-
-## [Module 5: Life Cycle Management]
-
-* Model monitoring
-* Model retraining
-* Concept drift
-* Data drift & data management
-
-
-## [Module 6: Project]
-
-* End-to-end project with all the things above
-
-### Titanic Data Exploration and Model Experimentation
-
-This project explores the Titanic dataset, performs data analysis and preprocessing, and uses MLflow to track experiments with different machine learning models.
-
-* data folder: contains the dataset used for training and testing of the model
-* mlflow folder: cointains the different models used and its artefacts
-
-Sections: 
-* 00-data_exploration: intial exploration of the data 
-* 01-experiment-tracking: implementation of the MLflow runs 
-
-## Instructors
-
-- ROHART Capucine (capucine.rohart@artefact.com)
-
+## Students
+- Moumen Awad (moumen.awad@edu.devinco.fr)
+- Luisa Benavides (luisa.benavides@edu.devinco.fr)
