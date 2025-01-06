@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/moume/Downloads/ESVIL%20Large%20files/esilv-mlops-crashcourse-24/lessons/01-model-and-experiment-management/mlruns/115230198757988272/f435caedce894aa1838c67905e070c45/artifacts
+end_time: 1736185940738
+entry_point_name: ''
+experiment_id: '115230198757988272'
+lifecycle_stage: active
+run_id: f435caedce894aa1838c67905e070c45
+run_name: likeable-trout-335
+run_uuid: f435caedce894aa1838c67905e070c45
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736185879938
+status: 3
+tags: []
+user_id: moume

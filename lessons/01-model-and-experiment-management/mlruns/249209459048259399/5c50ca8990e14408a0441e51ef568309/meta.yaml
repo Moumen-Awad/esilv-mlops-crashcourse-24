@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/moume/Downloads/ESVIL%20Large%20files/esilv-mlops-crashcourse-24/lessons/01-model-and-experiment-management/mlruns/249209459048259399/5c50ca8990e14408a0441e51ef568309/artifacts
+end_time: 1736185732802
+entry_point_name: ''
+experiment_id: '249209459048259399'
+lifecycle_stage: active
+run_id: 5c50ca8990e14408a0441e51ef568309
+run_name: unequaled-stoat-543
+run_uuid: 5c50ca8990e14408a0441e51ef568309
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736185732600
+status: 3
+tags: []
+user_id: moume
