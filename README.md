@@ -67,7 +67,7 @@ Course end: January 6th
 
 ## [Module 6: Project]
 
-* End-to-end project with all the things above
+* End-to-end project with all the things above [here](project-titanic/README.md)
 
 ## Instructors
 

@@ -1,4 +1,5 @@
 import os
+# Retrieve paths of dataset and models
 from config import DATA_DIRPATH, MODELS_DIRPATH
 from prefect import serve
 from workflows import batch_predict_workflow, train_model_workflow
