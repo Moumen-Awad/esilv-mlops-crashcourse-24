@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1736185789886
+current_stage: None
+description: null
+last_updated_timestamp: 1736185789886
+name: iris_lr_model
+run_id: 5c50ca8990e14408a0441e51ef568309
+run_link: null
+source: file:///c:/Users/moume/Downloads/ESVIL%20Large%20files/esilv-mlops-crashcourse-24/lessons/01-model-and-experiment-management/mlruns/249209459048259399/5c50ca8990e14408a0441e51ef568309/artifacts/models
+status: READY
+status_message: null
+storage_location: file:///c:/Users/moume/Downloads/ESVIL%20Large%20files/esilv-mlops-crashcourse-24/lessons/01-model-and-experiment-management/mlruns/249209459048259399/5c50ca8990e14408a0441e51ef568309/artifacts/models
+user_id: null
+version: 1

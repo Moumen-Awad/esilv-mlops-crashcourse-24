@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1736185940687
+current_stage: Production
+description: null
+last_updated_timestamp: 1736185944166
+name: NY_Taxi_Model
+run_id: f435caedce894aa1838c67905e070c45
+run_link: null
+source: file:///c:/Users/moume/Downloads/ESVIL%20Large%20files/esilv-mlops-crashcourse-24/lessons/01-model-and-experiment-management/mlruns/115230198757988272/f435caedce894aa1838c67905e070c45/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///c:/Users/moume/Downloads/ESVIL%20Large%20files/esilv-mlops-crashcourse-24/lessons/01-model-and-experiment-management/mlruns/115230198757988272/f435caedce894aa1838c67905e070c45/artifacts/model
+user_id: null
+version: 1

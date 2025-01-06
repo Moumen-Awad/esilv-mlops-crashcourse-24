@@ -1,6 +1,6 @@
 # MODELS
 MODEL_VERSION = "0.0.1"
-PATH_TO_PIPELINE = ...  # TODO: fill in the path to the pipeline
+PATH_TO_PIPELINE = "./local_models/"  # Do: fill in the path to the pipeline
 
 
 # MISC
