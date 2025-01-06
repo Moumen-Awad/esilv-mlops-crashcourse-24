@@ -1,11 +1,11 @@
 from pydantic import BaseModel
 
-
 class InputData(BaseModel):
-    Age: float = 22
-    Sex: str = 0
-    Pclass: int = 3
-    Embarked: str = 0
+    Age: int = 38
+    Fare: float = 71.2833
+    Sex: int = 1
+    Pclass: int = 1
+    Embarked: int = 0
     SibSp: int = 1
     Parch: int = 0
 

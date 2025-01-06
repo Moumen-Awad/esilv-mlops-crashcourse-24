@@ -38,7 +38,7 @@ def train_model_workflow(
     if artifacts_filepath is not None:
         logger.info(f"Saving artifacts to {artifacts_filepath}...")
         save_pickle(os.path.join(artifacts_filepath, "dv.pkl"), dv)
-        save_pickle(os.path.join(artifacts_filepath, "label_encoders.pkl"), label_encoders)
+        save_pickle(os.path.join(artifacts_filepath, "encoders.pkl"), label_encoders)
         save_pickle(os.path.join(artifacts_filepath, "model.pkl"), model)
 
     return {"model": model, "dv": dv, "label_encoders": label_encoders, "accuarcy": accuarcy}
@@ -52,13 +52,24 @@ def batch_predict_workflow(
     label_encoders: Optional[dict] = None,
     artifacts_filepath: Optional[str] = None,
 ) -> np.ndarray:
-    """Make predictions on a new dataset"""
+    """
+    Performs batch prediction on a new dataset using a pre-trained model and saved artifacts.
+    This function loads the necessary pre-trained model, `DictVectorizer`, and `LabelEncoder` from the specified file paths if they are not provided. It then processes the input data, applies feature transformation, and makes predictions using the loaded model.
+    Args:
+        input_filepath (str): The path to the input dataset (CSV file) for prediction.
+        model (RandomForestClassifier, optional): The pre-trained machine learning model. If not provided, the model is loaded from the artifacts folder.
+        dv (DictVectorizer, optional): The pre-fitted `DictVectorizer` for transforming categorical features. If not provided, it is loaded from the artifacts folder.
+        label_encoders (dict, optional): A dictionary of pre-fitted `LabelEncoder` objects used for transforming categorical features. If not provided, they are loaded from the artifacts folder.
+        artifacts_filepath (str, optional): The directory where the model, `DictVectorizer`, and encoders are saved as pickle files.
+    Returns:
+        np.ndarray: The predicted values based on the input dataset.
+    """
     if dv is None:
         dv = load_pickle(os.path.join(artifacts_filepath, "dv.pkl"))
     if model is None:
         model = load_pickle(os.path.join(artifacts_filepath, "model.pkl"))
     if label_encoders is None:
-        label_encoders = load_pickle(os.path.join(artifacts_filepath, "label_encoders.pkl"))
+        label_encoders = load_pickle(os.path.join(artifacts_filepath, "encoders.pkl"))
 
     X, _, _, _ = process_data(filepath=input_filepath, with_target=False, dv=dv, label_encoders=label_encoders)
     y_pred = predict(X, model)

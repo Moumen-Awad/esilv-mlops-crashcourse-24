@@ -6,23 +6,29 @@ from loguru import logger
 from sklearn.preprocessing import LabelEncoder
 from sklearn.base import BaseEstimator
 from sklearn.feature_extraction import DictVectorizer
-
 from lib.models import InputData
 from lib.preprocessing import CATEGORICAL_COLS, encode_categorical_cols
 
 def run_inference(input_data: List[InputData], dv: DictVectorizer, model: BaseEstimator, encoder: Dict[str, LabelEncoder]) -> np.ndarray:
-    """Run inference on a list of input data.
-
+    """
+    Run inference on a list of input data.
     Args:
-        input_data (List[InputData]): the data points to run inference on.
-        dv (DictVectorizer): the fitted DictVectorizer object.
-        model (BaseEstimator): the fitted model object.
-
+        input_data (List[InputData]): The data points to run inference on.
+        dv (DictVectorizer): The fitted DictVectorizer object used for encoding categorical features.
+        model (BaseEstimator): The fitted model object used to make predictions.
+        encoder (LabelEncoder): The fitted LabelEncoder object used to encode target labels (e.g., survival outcomes).
     Returns:
-        np.ndarray: the predicted survival outcomes (0 for not survived, 1 for survived).
-
+        np.ndarray: The predicted survival outcomes (0 for not survived, 1 for survived).
     Example payload:
-        {'Age': 22, 'Sex': '0', 'Pclass': 3, 'Embarked': '0', 'SibSp': 1, 'Parch': 0}
+        {
+            "Age": 38,
+            "Fare": 71.2833,
+            "Sex": 1,
+            "Pclass": 1,
+            "Embarked": 0,
+            "SibSp": 1,
+            "Parch": 0
+        }
     """
     logger.info(f"Running inference on:\n{input_data}")
     df = pd.DataFrame([x.dict() for x in input_data])
